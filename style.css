@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: rgb(195,34,164);
+    background: linear-gradient(0deg, rgba(195,34,164,1) 0%, rgba(166,104,133,1) 60%, rgba(253,45,147,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(216,214,214);
+    width: 450px;
+}
+
+.header{
+    color: #fff;
+    text-align: center;
+    background-color: #d4107c;
+    padding: 20px 40px;
+    border-bottom: 2px solid #494848;
+}
+
+.form{
+    padding: 40px 40px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 15px;
+}
+
+.form input::placeholder{
+    color: #2a0845;
+}
+
+.form #submit{
+    background-color: #d4107c;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background-color: #a5418f;
+}
+.regtable {
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+}
+
+body > table{
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+    border-collapse: collapse;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: -250px;
+}
+
+td , th{
+    text-align: center;
+    text-align: left;
+    padding: 8px;
+    
+   
+   }
+   th{
+    background-color:#d4107c;
+    color: #fafafa;
+    font-family: 'Open Sans',Sans-serif;
+    text-transform: uppercase;
+   
+   }
+   tr{
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+   }
+   tr:nth-child(even){
+    background-color:#d4107c;
+   }
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+@media only screen and (max-width : 500px){
+    .form{
+        width: 100%;
+    }
+    .form-group span{
+        font-size: xx-small;
+    }
+}
